@@ -30,7 +30,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 body {
@@ -83,8 +83,7 @@ body {
 }
 
 .svg-hover:hover {
-  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-  contrast(87%);
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
   transition: 0.7s;
 }
 
@@ -106,18 +105,18 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.burger-btn.--active .burger-btn__line:nth-child(2){
+.burger-btn.--active .burger-btn__line:nth-child(2) {
   opacity: 0;
 }
 
-.burger-btn.--active .burger-btn__line:nth-child(1){
+.burger-btn.--active .burger-btn__line:nth-child(1) {
   -webkit-transform: translateY(12px) rotate(45deg);
   -ms-transform: translateY(12px) rotate(45deg);
   -o-transform: translateY(12px) rotate(45deg);
   transform: translateY(12px) rotate(45deg);
 }
 
-.burger-btn.--active .burger-btn__line:nth-child(3){
+.burger-btn.--active .burger-btn__line:nth-child(3) {
   -webkit-transform: translateY(-12px) rotate(-45deg);
   -ms-transform: translateY(-12px) rotate(-45deg);
   -o-transform: translateY(-12px) rotate(-45deg);
@@ -304,24 +303,14 @@ body {
   align-items: center;
   max-width: 1400px;
   width: 100%;
-  height: fit-content;
+  height: 80vh;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 .video__img {
   width: 100%;
-  height: auto;
-}
-
-.video__btn {
-  width: 130px;
-  height: 130px;
-  padding: 0;
-  border: none;
-  background-image: url(./assets/svg/video-play.svg);
-  background-color: transparent;
-  background-repeat: no-repeat;
-  position: absolute;
-  cursor: pointer;
+  height: 100%;
 }
 
 .price__container {
@@ -427,7 +416,7 @@ input:-webkit-autofill:active {
   margin-bottom: 10px;
 }
 
-.footer .container{
+.footer .container {
   padding: 30px 20px;
   display: flex;
   justify-content: space-between;
@@ -517,10 +506,12 @@ input:-webkit-autofill:active {
   :root {
     --font2: 32px;
   }
+
   .main.--active,
   .header.--active {
     position: relative;
   }
+
   .main.--active::before,
   .header.--active::before {
     content: "";
@@ -532,17 +523,21 @@ input:-webkit-autofill:active {
     z-index: 1;
     pointer-events: none;
   }
+
   .burger-btn {
     display: block;
     z-index: 3;
   }
+
   .header__burger-btn {
     margin-left: 15px;
   }
+
   .header__container {
     background-image: url(./assets/img/tablet-bg.jpg);
     padding: 20px 60px;
   }
+
   .header__nav {
     position: absolute;
     opacity: 0;
@@ -556,113 +551,136 @@ input:-webkit-autofill:active {
     transition: 0.5s;
     z-index: 2;
   }
+
   .header.--active .header__nav {
     opacity: 1;
     right: 0;
   }
+
   .nav__list {
     flex-direction: column;
     gap: 19px;
     padding: 135px 112px;
     height: 100%;
   }
+
   .nav__link {
     font-size: 35px;
     line-height: 2;
   }
+
   .header__lang {
     margin-left: auto;
   }
+
   .lang__span {
     margin: 0 9px 0;
   }
+
   .hero__container {
     height: 500px;
     background-image: url(./assets/img/tablet-bg.jpg);
     padding: 78px 60px 0;
     background-position: center -90px;
   }
+
   body,
   .hero__text {
     line-height: 1.21;
   }
+
   .hero__text {
     max-width: 390px;
     margin-bottom: 58px;
   }
+
   .hero__title {
     line-height: 2;
     font-size: 32px;
     margin-bottom: 20px;
   }
+
   .section__title-wrapper {
     line-height: 2.5;
     margin: 0 auto 50px;
   }
+
   .section__container {
     padding-top: 80px;
   }
+
   .skills .section__title-wrapper {
     margin: 0 auto 45px;
   }
+
   .skills__cards {
     column-gap: 44px;
     row-gap: 36px;
     margin-bottom: 40px;
   }
+
   .skills-item {
     max-width: 300px;
     padding: 80px 10px 40px;
   }
+
   .skills-item__title {
     line-height: 2;
   }
+
   .video .section__container {
-    padding: 80px 0 0;
+    padding: 80px 20px 0;
   }
-  .video__img {
-    height: 418px;
+
+  .video__player {
+    height: 50vh;
   }
-  .video__btn {
-    width: 65px;
-    height: 65px;
-  }
+
   .price-item {
     max-width: 420px;
     line-height: 2;
     padding: 40px;
   }
+
   .price__cards {
     gap: 50px;
   }
+
   .price__container {
     padding-bottom: 80px;
   }
+
   .contacts__container {
     align-items: center;
     text-align: center;
     padding: 74px 20px 111px;
     background-size: auto 600px;
   }
+
   .contacts__section-title {
     margin: 0 0 51px 0;
   }
+
   .contacts__form {
     align-items: center;
   }
+
   .footer .container {
     flex-direction: column;
     gap: 3px;
     padding: 17px 20px;
   }
+
   .footer__copy,
   .footer__rss {
     line-height: 1.3;
     margin: 0;
   }
+
   .footer__rss {
     margin: 0 0 24px;
   }
+
   .footer__social-list {
     margin: 0;
     padding: 0;
@@ -673,21 +691,24 @@ input:-webkit-autofill:active {
   .section__container {
     padding: 60px 30px 0;
   }
+
   .section__title-wrapper {
     width: 80%;
   }
+
   .skills__cards {
     margin-bottom: 0;
   }
-  .video__img {
-    height: auto;
-  }
-  .price-item__title, .price-item__price {
+
+  .price-item__title,
+  .price-item__price {
     margin-bottom: 10px;
   }
+
   .price__container {
     padding-bottom: 60px;
   }
+
   .contacts__container {
     background-position: 24%;
   }
@@ -697,8 +718,13 @@ input:-webkit-autofill:active {
   .header__nav {
     width: 100%;
   }
+
   .nav__list {
     text-align: center;
+  }
+
+  .video__player {
+    height: 30vh;
   }
 }
 
@@ -708,34 +734,42 @@ input:-webkit-autofill:active {
     padding: 100px 50px;
     height: 100%;
   }
+
   .hero__container {
-    height:480px;
+    height: 480px;
     background-position: 70% -90px;
     padding: 63px 30px 0;
   }
+
   .header__container {
     background-position: 70% 0;
     padding: 20px 30px;
   }
+
   .portfolio__img {
     width: 100%;
     height: auto;
   }
+
   .price-item {
     padding: 15px;
     line-height: 1.7;
   }
+
   .price-item__title {
     font-size: 24px;
   }
+
   .contacts__form,
   .contacts__input {
     width: 100%;
   }
+
   .contacts__section-title {
     width: 100%;
   }
+
+  .video__player {
+    height: 20vh;
+  }
 }
-
-
-
